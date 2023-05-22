@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+    <meta name="description" content="Sitio web de ventas de inmobiliaria">
+    <meta name="keywords" content="inmobiliaria, ventas, propiedades">
+    <link rel="stylesheet" href="../css/styleVenta.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div style="width: 100%;">
+            <a href="../html/index.html">
+                <img class="primary-icon" src="../images/logo.png" />
+            </a>
+        </div>
+        <div class="empresa">
+            <h1>C&T Properties</h1>
+        </div>
+        <ul class="nav-list" id="naviList">
+            <li class="list-item"><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+            <li class="list-item"><a href="./venta.html">Venta</a></li>
+            <li class="list-item"><a href="./alquiler.html">Alquiler</a></li>
+            <li class="list-item"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+        <div class="menu" id="toggleButton">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+    <section>
+        <h1>Vendé tu propiedad</h1>
+        <p>Completá el formulario y nos pondremos en contacto con vos para continuar con el proceso.</p>
+    </section>
+
+    <section>
+        <div class="formulario">
+            <form action="enviar.php" method="post" id="myForm" onsubmit="return validateForm1()">
+                <div class="left">
+                    <legend>Información personal</legend>
+                    <div id="nameError" class="error a-llenar">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nameInput" name="name" required>
+                    </div>
+                    <div id="emailError" class="error a-llenar">
+                        <label for="email">Email:</label>
+                        <input type="email" id="emailInput" name="email" required>
+                    </div>
+                    <div id="phoneError" class="error a-llenar">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="phoneInput" name="phone" maxlength="12"
+                            placeholder="ingrese su número telefónico" required>
+                    </div>
+                    <div class="a-llenar">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="1"
+                            placeholder="(Este campo es opcional)"></textarea>
+                    </div>
+                </div>
+            </form>
+            <form class="right">
+                <div class="right">
+                    <legend>Información de la propiedad</legend>
+                    <div>
+                        <label for="tipo">Seleccione el tipo de propiedad:</label>
+                        <select id="tipo" name="tipo">
+                            <option id="tipo" value="Casa">Casa</option>
+                            <option id="tipo" value="PH">PH</option>
+                            <option id="tipo" value="Local">Local</option>
+                            <option id="tipo" value="terrenos">Terrenos y lotes</option>
+                            <option id="tipo" value="campos">Campos y chacras</option>
+                            <option id="tipo" value="fondos">Fondos de comercio</option>
+                            <option id="tipo" value="cochera">Cochera</option>
+                            <option id="tipo" value="Oficina">Oficina</option>
+                            <option id="tipo" value="Galpon">Galpon</option>
+                            <option id="tipo" value="Quinta">Quinta</option>
+                            <option id="tipo" value="Otros">Otros</option>
+                        </select>
+                    </div>
+
+                    <div id="map"></div>
+                </div>
+            </form>
+            <button type="submit" onclick="validateForm1()"><a href="#">Enviar</a></button>
+
+
+        </div>
+        <footer>
+            <ul class="footer-links">
+                <li>
+                    <a href="../html/sobreNosotros.html">Sobre nosotros,</a>
+                </li>
+                <li>
+                    <a href="../html/index.html">Inicio,</a>
+                </li>
+                <li>
+                    <a href="https://github.com/IairFei/CaC-Proyecto-Grupo10/issues"><i class="fa fa-github"
+                            aria-hidden="true"></i>Dejanos to feedback</a>
+                </li>
+            </ul>
+            <p class="text-center">Copyright &copy; Grupo 10 Codo a Codo</p>
+            <p class="text-center">Este proyecto esta hecho unicamente para fines educativos</p>
+        </footer>
+        <script src="../js/scriptVenta.js"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfWTmCDJ81In4GdkBihq-FQrHTrbj0YFs&callback=iniciarMap"></script>
+</body>
+
+</html>
