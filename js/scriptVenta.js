@@ -27,12 +27,14 @@ function displayPhoneNumber(value) {
 }
 
 
+
 function validateForm1() {
   var nameInput = document.getElementById("nameInput")
   var emailInput = document.getElementById("emailInput");
   var phoneInput = document.getElementById("phoneInput");
   var name = nameInput.value;
   var email = emailInput.value;
+  var phone = phoneInput.value;
   
   if (name == "") {
     alert("Por favor, ingrese su nombre completo.");
@@ -52,17 +54,21 @@ function validateForm1() {
     alert("Por favor, ingrese un número de teléfono válido de 10 dígitos.");
     phoneInput.value = "";
     phoneInput.focus();
-    return false;
-  }
+    return false;
+  }
   
   console.log("Nombre:", document.getElementById("nameInput").value);
   console.log("Email:", email);
   console.log("Teléfono:", phone);
   console.log("Mensaje:", document.getElementById("mensaje").value);
   console.log("Tipo de propiedad:", document.getElementById("tipo").value);
+  console.log("Ubicación de la API de Google: https://maps.googleapis.com/maps/api/js?key=AIzaSyCfWTmCDJ81In4GdkBihq-FQrHTrbj0YFs&callback=iniciarMap");
+  alert("¡Su información ha sido enviada con éxito!");
+  window.location.reload();
 
   return true;
 }
+
 
 function iniciarMap(){
   var coord = {lat:-34.5956145 ,lng: -58.4431949};

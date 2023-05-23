@@ -17,7 +17,7 @@ body {
 h1 {
   padding-top: 40px;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -116,39 +116,31 @@ form .block {
 
 form input,
 form textarea {
-  width: 50%;
+  width: 89%;
   padding: 14px;
   border: none;
   background: none;
   outline: none;
   color: #fff;
   border-bottom: 1px solid #f1f1f1;
-  font-size: 15px;
-}
-
-#emailInput {
-  margin: 18px;
-}
-
-input:focus {
-  border-style: groove;
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(15, 15, 201, 1) 35%, rgba(46, 23, 190, 0.914) 100%);
+  font-size: 28px;
 }
 
 .formulario {
   display: flex;
-  height: 400px;
+  height: 300px;
+  width: 89%;
 }
 
 form .left {
   width: 100%;
   flex: 1;
-  margin-left: 245px;
+  margin-left: 100px;
 }
 
 form .right {
   width: 100%;
-  margin-left: 350px;
+  margin-left: 150px;
 }
 
 .a-llenar{
@@ -159,7 +151,7 @@ form .right {
   margin-top: 20px;
   padding: 10px;
   color: #fff;
-  font-size: 16px;
+  font-size: 23px;
   font-weight: bold;
   text-align: center;
   border-radius: 5px;
@@ -200,8 +192,13 @@ select:valid:focus {
 
 
 legend {
-  font-size: 20px;
-  margin: 20px;
+  width:fit-content;
+  font-size: 30px;
+  margin-left: 150px;
+  margin-top: 20px;
+  border: 2px solid rgb(23, 15, 52);
+  border-radius: 8px;
+  background-color: rgb(23, 15, 52);
 }
 
 .footer-links {
@@ -244,17 +241,17 @@ li i {
 }
 
 button {
-  margin-top: 435px;
-  margin-left: 45%;
+  margin-top: 495px;
+  margin-left: 55%;
   position: absolute;
   padding: 20px 70px;
   border-radius: 7px;
   border: 1px solid rgb(5, 255, 126);
-  font-size: 15px;
+  font-size: 30px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
-  background: transparent;
+  background-color: rgb(23, 15, 52);
   color: #fff;
   overflow: hidden;
   box-shadow: 0 0 0 0 transparent;
@@ -343,13 +340,14 @@ button:active {
 }
 
 label {
-  font-size: 15px;
+  font-size: 29px;
   margin: 30px;
+  margin-top: 50px;
 }
 
 select {
   width: 250px;
-  font-size: 15px;
+  font-size: 25px;
   border: 5px;
   border-radius: 5px;
   appearance: none;
@@ -362,14 +360,13 @@ select {
 }
 
 select option {
-  padding: 20px;
-  font-size: 20px;
-  background: #fff;
-  color: #333;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 1s ease-in-out;
-  font-size: 15px;
+padding: 20px;
+background: #fff;
+color: #333;
+border-radius: 5px;
+cursor: pointer;
+transition: all 1s ease-in-out;
+font-size: 25px;
 }
 
 select:hover {
@@ -387,14 +384,13 @@ select option:checked {
 }
 
 #phoneInput {
-  margin: -3px;
-  padding: 10px;
-  font-size: 15px;
-  text-align: left;
-  border: none;
-  outline: none;
-  font-size: 15px;
-  width: 50%;
+margin: -3px;
+padding: 10px;
+text-align: left;
+border: none;
+outline: none;
+font-size: 27px;
+width: 50%;
 }
 
 
@@ -442,13 +438,10 @@ select option:checked {
   }
 }
 
-#map canvas {
-  width: 5%;
-  height: 400px !important;
-}
-
 #map {
-  margin-top: 13px;
-  width: 77%;
-  height: 230px;
+margin-top: 22px;
+margin-left: 20px;
+width: 100%;
+height: 320px;
+border: 5px solid rgb(23, 15, 52);
 }

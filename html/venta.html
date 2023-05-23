@@ -36,29 +36,34 @@
 
     <section>
         <h1>Vendé tu propiedad</h1>
-        <p>Completá el formulario y nos pondremos en contacto con vos para continuar con el proceso.</p>
+        <p>Completá el formulario y nos pondremos en contacto con vos para continuar con el proceso.</p> 
     </section>
 
     <section>
         <div class="formulario">
-            <form action="enviar.php" method="post" id="myForm" onsubmit="return validateForm1()">
-                <div class="left">
+            <form action="enviar.php" method="post" id="myForm" onsubmit=" "onsubmit="return validateForm1()">
+                <div class="left" >
+                    
                     <legend>Información personal</legend>
+                  
                     <div id="nameError" class="error a-llenar">
-                        <label for="nombre">Nombre:</label>
+                        <label for="nombre">Nombre</label>
                         <input type="text" id="nameInput" name="name" required>
+                                          
                     </div>
                     <div id="emailError" class="error a-llenar">
-                        <label for="email">Email:</label>
+                        <label for="email">Email</label>
                         <input type="email" id="emailInput" name="email" required>
+                        
                     </div>
                     <div id="phoneError" class="error a-llenar">
-                        <label for="telefono">Teléfono:</label>
+                        <label for="telefono">Teléfono</label>
+                        <br>
                         <input type="tel" id="phoneInput" name="phone" maxlength="12"
-                            placeholder="ingrese su número telefónico" required>
+                            placeholder="ingrese su número" required>
                     </div>
                     <div class="a-llenar">
-                        <label for="mensaje">Mensaje:</label>
+                        <label for="mensaje">Mensaje</label>
                         <textarea id="mensaje" name="mensaje" rows="1"
                             placeholder="(Este campo es opcional)"></textarea>
                     </div>
@@ -67,6 +72,7 @@
             <form class="right">
                 <div class="right">
                     <legend>Información de la propiedad</legend>
+               <br>
                     <div>
                         <label for="tipo">Seleccione el tipo de propiedad:</label>
                         <select id="tipo" name="tipo">
@@ -83,11 +89,11 @@
                             <option id="tipo" value="Otros">Otros</option>
                         </select>
                     </div>
-
-                    <div id="map"></div>
+                <div id="map"></div>
+                   
                 </div>
             </form>
-            <button type="submit" onclick="validateForm1()"><a href="#">Enviar</a></button>
+            <button type="submit" onclick="validateForm1()">Enviar</a></button>
 
 
         </div>

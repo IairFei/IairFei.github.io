@@ -328,6 +328,6 @@ section .imagenes {
     40%{opacity:.6}100%{opacity:1}
 }
 
-.mapa{
+#mapa{
     text-align: center;
 }
