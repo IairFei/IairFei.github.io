@@ -202,7 +202,20 @@ footer {
 li i {
     padding-right: 5px;
 }
+@media all and (max-width: 1200px) {
 
+    .logo {
+        font-size: 20px;
+    }
+
+    .contact-form h3 {
+        font-size: 15px;
+    }
+
+    .nav-list {
+        font-size: 16px;
+    }
+}
 /* Iphone 12 Pro */
 @media all and (max-width: 390px) {
     .navbar {
@@ -298,29 +311,7 @@ li i {
         font-size: 13px;
     }
 }
-
-@media all and (max-width: 1200px) {
-
-    .logo {
-        font-size: 20px;
-    }
-
-    .contact-form h3 {
-        font-size: 15px;
-    }
-
-    .nav-list {
-        font-size: 16px;
-    }
-}
-/* Galaxy Fold */
-@media all and (max-width: 280px) {
-    .navbar {
-        flex-direction: column;
-        position: absolute;
-        width: 100%;
-        text-align: center;
-    }
+@media all and (max-width: 360px) {
 
     .menu {
         display: block;
@@ -328,11 +319,91 @@ li i {
         right: 20px;
         top: 18px;
     }
-
-    .navbar .container-icon {
+    .nav-list {
+        list-style-type: none;
         width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+        padding-right: 0px;
+
     }
 
+    .nav-list .list-item {
+        display: block;
+        padding: 6px;
+        border-top: 1px solid white;
+        width: 100%;
+    }
+    a{
+        margin-top: 0;
+        font-size: 14px;
+        display: block;
+    }
+    .active {
+        display: block;
+    }
+
+    .bienvenida {
+        width: auto;
+        height: 50%;
+        align-content: center;
+        justify-content: center;
+        margin-top: 40px;
+        min-width: 85%;
+    }
+
+    h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .button-64 {
+        margin: 3px 19%;
+        font-size: 15px;
+        display: inline-table;
+        min-width: 150px;
+        padding: 8px;
+    }
+
+    .button-64 span {
+        padding:  13px 5px 13px;
+    }
+    section i {
+        font-size: 12px;
+        margin: 0 4px;
+    }
+
+    .footer-links li {
+        display: inline;
+    }
+
+    footer {
+        height: 130px;
+    }
+
+    .footer-links {
+        padding-left: 20px;
+    }
+
+    .text-center {
+        font-size: 11px;
+    }
+}
+
+/* Galaxy Fold */
+@media all and (max-width: 280px) {
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 18px;
+    }
     .nav-list {
         list-style-type: none;
         width: 100%;
