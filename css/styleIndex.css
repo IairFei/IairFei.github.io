@@ -313,3 +313,105 @@ li i {
         font-size: 16px;
     }
 }
+/* Galaxy Fold */
+@media all and (max-width: 280px) {
+    .navbar {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 18px;
+    }
+
+    .navbar .container-icon {
+        width: 100%;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+        padding-right: 0px;
+
+    }
+
+    .nav-list .list-item {
+        display: block;
+        padding: 4px;
+        border-top: 1px solid white;
+        width: 100%;
+    }
+
+    .primary-icon {
+        height: 35px;
+        margin-left: 0px;
+        margin-top: 8px;
+    }
+
+    a{
+        margin-top: 0;
+        font-size: 14px;
+        display: block;
+    }
+    .active {
+        display: block;
+    }
+
+    .bienvenida {
+        width: auto;
+        max-height: 48%;
+        align-content: center;
+        justify-content: center;
+        margin-top: 32px;
+        min-width: 85%;
+    }
+
+    h1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .button-64 {
+        margin: 3px 13%;
+        font-size: 13px;
+        display: inline-table;
+        min-width: 150px;
+        padding: 5px;
+    }
+
+    .button-64 span {
+        padding:  10px 5px 13px;
+    }
+    section i {
+        font-size: 12px;
+        margin: 0 4px;
+    }
+
+    .footer-links li {
+        display: inline;
+    }
+
+    footer {
+        height: 130px;
+    }
+
+    .footer-links {
+        padding-left: 20px;
+    }
+
+    .text-center {
+        font-size: 9px;
+    }
+}
